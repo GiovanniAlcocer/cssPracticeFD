@@ -1,19 +1,26 @@
-li:first-child{                             /* Number 1 */
+/* Number 1 */
+li:first-child{                             
     color: red;
 }
-
-li:nth-child(even){                         /* Number 3 */
+/* Number 3 */
+li:nth-child(even){                         
     background-color: blue;
 }
-
-li:nth-child(5){                            /* Number 5 */
+/* Number 5 */
+li:nth-child(5){                            
     color: orange;
 }
-
+/* number 7 */
 li:first-child:nth-last-child(n+8),
-li:first-child:nth-last-child(n+8) ~ li {   /* Number 7 */
+li:first-child:nth-last-child(n+8) ~ li { 
     color: white;
     background-color: green;
     padding: 10px;
     border: 1px solid white;
+}
+/* Number 8 */
+li:first-child:nth-last-child(8),
+li:first-child:nth-last-child(8) ~ li {                   
+    color: white;
+    background-color: blue;
 }
