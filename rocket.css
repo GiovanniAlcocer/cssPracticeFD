@@ -1,0 +1,77 @@
+.frame {
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    margin: auto;
+    position: relative;
+    background-color: rgb(28, 28, 28);
+    z-index: -2;
+}
+
+.rocket-head {
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid blue;
+    position: absolute;
+    top: calc(15%);
+    left: calc(50% - 40px);
+}
+
+.rocket-body {
+    width: 80px;
+    height: 250px;
+    background-color: red;
+    position: absolute;
+    top: calc(15% + 60px);
+    left: calc(50% - 40px);
+}
+
+.windows{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: yellow;
+    left: calc(50% - 15px);
+    border: 2px solid black;
+}
+
+.rocket-first-window{
+    top: calc(15%);
+}
+
+.rocket-second-window{
+    top: calc(30% + 30px);
+}
+
+.rocket-fins{
+    width: 0; 
+    height: 0; 
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 150px solid blue;
+    position: absolute;
+    top: calc(15% + 160px);
+    left: calc(50% - 80px);
+    z-index: -1;
+}
+
+.rocket-flames {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid yellow;
+    position: absolute;
+    top: calc(15% + 310px);
+}
+
+.rocket-left-flame {
+    left: calc(50% - 40px);
+}
+
+.rocket-right-flame {
+    left: calc(50%);
+}
