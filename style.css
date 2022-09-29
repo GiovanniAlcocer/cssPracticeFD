@@ -1,3 +1,29 @@
+/* Number 1 */
+li:first-child{                             
+    color: red;
+}
+/* Number 3 */
+li:nth-child(even){                         
+    background-color: blue;
+}
+/* Number 5 */
+li:nth-child(5){                            
+    color: orange;
+}
+/* number 7 */
+li:first-child:nth-last-child(n+8),
+li:first-child:nth-last-child(n+8) ~ li { 
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border: 1px solid white;
+}
+/* Number 8 */
+li:first-child:nth-last-child(8),
+li:first-child:nth-last-child(8) ~ li {                   
+    color: white;
+    background-color: blue;
+}
 li:not(:last-child) {
     padding: 13px;
 }
